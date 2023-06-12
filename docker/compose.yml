@@ -1,0 +1,8 @@
+services:
+  web:
+    image: httpd:2.4.57
+    container_name: web
+    ports:
+      - "80:80"
+    volumes:
+      - ./website:/usr/local/apache2/htdocs/
